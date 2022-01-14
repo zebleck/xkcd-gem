@@ -50,7 +50,7 @@ class XKCD
   end
 
   def self.get_comic(id)
-    comic = JSON.parse(open("https://xkcd.com/#{id}/info.0.json").read)
+    comic = JSON.parse(URI.open("https://xkcd.com/#{id}/info.0.json").read)
     "#{comic["alt"]} : #{comic["img"]}"
   end
 end
