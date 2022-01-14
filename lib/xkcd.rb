@@ -19,7 +19,7 @@ class XKCD
   #   => "https://xkcd.com/891/"
 
   def self.comic
-    open("https://dynamic.xkcd.com/random/comic/").base_uri.to_s
+    URI.open("https://dynamic.xkcd.com/random/comic/").base_uri.to_s
   end
 
   def self.search(query)
