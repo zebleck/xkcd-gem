@@ -1,23 +1,23 @@
 Gem::Specification.new do |s|
   s.name               = "xkcdfork"
   s.version            = "1.1.2"
-  s.default_executable = "xkcd"
+  s.default_executable = "xkcdfork"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Hemanth.HM"]
   s.date = %q{2012-05-20}
   s.description = %q{A simple gem to get random img/comic url from xkcd}
   s.email = %q{hemanth.hm@gmail.com}
-  s.files = ["Rakefile", "lib/xkcd.rb", "bin/xkcd"]
+  s.files = ["Rakefile", "lib/xkcdfork.rb", "bin/xkcdfork"]
   s.test_files = Dir.glob('test/*.rb')
-  s.homepage = %q{http://rubygems.org/gems/xkcd}
+  s.homepage = %q{https://github.com/zebleck/xkcd-gem}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}
   s.add_dependency('nokogiri', '>= 1.5.0')
   s.add_dependency('google-search')
   s.summary = %q{XCKD random img urls!}
   s.bindir = 'bin'
-  s.executables = 'xkcd'
+  s.executables = 'xkcdfork'
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
